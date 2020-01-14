@@ -20,7 +20,7 @@ var _TD = {
       is_paused: true,
 
       // 横向多少个格子
-      width: 16,
+      width: 17,
 
       // 纵向多少个格子
       height: 16,
