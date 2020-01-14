@@ -1,0 +1,8 @@
+.idea
+*.iml
+*.pyc
+*.zip
+build/
+src/css/c-min.css
+node_modules/
+npm-debug.log
