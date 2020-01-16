@@ -342,10 +342,12 @@ _TD.a.push(function (TD) {
   };
 
   /**
-   * 怪物死亡时的爆炸效果对象
+   * 怪物死亡时的爆炸效果对象 DISABLED
    */
   var explode_obj = {
+
     _init: function (cfg) {
+/*
       cfg = cfg || {};
 
       var rgb = TD.lang.rgb2Arr(cfg.color);
@@ -363,9 +365,11 @@ _TD.a.push(function (TD) {
       this.wait0 = TD.exp_fps * (cfg.time || 1);
 
       cfg.scene.addElement(this);
+*/
     },
 
     step: function () {
+/*
       if (!this.is_valid) {
         return;
       }
@@ -373,15 +377,18 @@ _TD.a.push(function (TD) {
       this.r++;
       this.is_valid = this.wait > 0;
       this.rgb_a = this.wait / this.wait0;
+*/
     },
 
     render: function () {
+/*
       var ctx = TD.ctx;
       ctx.fillStyle = "rgba(" + this.rgb_r + "," + this.rgb_g + "," + this.rgb_b + "," + this.rgb_a + ")";
       ctx.beginPath();
       ctx.arc(this.cx, this.cy, this.r, 0, Math.PI * 2, true);
       ctx.closePath();
       ctx.fill();
+*/
     }
   };
 
@@ -393,7 +400,7 @@ _TD.a.push(function (TD) {
    *    cx: 中心 x 坐标
    *    cy: 中心 y 坐标
    *    r: 半径
-   *    color: RGB色彩，形如“#f98723”
+   *    color: RGB 色彩，形如 “#f98723”
    *    scene: Scene 对象
    *    step_level:
    *    render_level:
@@ -403,10 +410,12 @@ _TD.a.push(function (TD) {
    *  }
    */
   TD.Explode = function (id, cfg) {
+/*
 //  cfg.on_events = ["enter", "out"];
     var explode = new TD.Element(id, cfg);
     TD.lang.mix(explode, explode_obj);
     explode._init(cfg);
     return explode;
+*/
   };
 }); // _TD.a.push end
