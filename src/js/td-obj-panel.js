@@ -15,7 +15,7 @@ _TD.a.push(function (TD) {
   var panel_obj = {
     _init: function (cfg) {
       cfg = cfg || {};
-      this.x = cfg.x + 40;
+      this.x = cfg.x;
       this.y = cfg.y;
       this.scene = cfg.scene;
       this.map = cfg.main_map;
