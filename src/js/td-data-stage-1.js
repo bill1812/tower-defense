@@ -112,6 +112,52 @@ _TD.a.push(function (TD) {
           }, {
             pos: [15, 15],
             passable_flag: 0
+
+
+          }, {
+            pos: [3, 1],
+            passable_flag: 0
+          }, {
+            pos: [15, 1],
+            passable_flag: 0
+          }, {
+            pos: [1, 14],
+            passable_flag: 0
+          }, {
+            pos: [13, 14],
+            passable_flag: 0
+          }, {
+            pos: [3, 12],
+            passable_flag: 0
+          }, {
+            pos: [5, 3],
+            passable_flag: 0
+          }, {
+            pos: [13, 3],
+            passable_flag: 0
+          }, {
+            pos: [7, 5],
+            passable_flag: 0
+          }, {
+            pos: [11, 5],
+            passable_flag: 0
+          }, {
+            pos: [7, 8],
+            passable_flag: 0
+          }, {
+            pos: [5, 10],
+            passable_flag: 0
+          }, {
+            pos: [11, 12],
+            passable_flag: 0
+          }, {
+            pos: [9, 7],
+            passable_flag: 0
+          }, {
+            pos: [9, 10],
+            passable_flag: 0
+
+
           }, {
             pos: [7, 15],
             build_flag: 0
@@ -119,7 +165,7 @@ _TD.a.push(function (TD) {
             pos: [1, 1], // [4, 12],
             building: "wall"
           }, {
-            pos: [1, 2], // [4, 13],
+            pos: [15, 14], // [4, 13],
             building: "wall"
 
 
@@ -141,7 +187,7 @@ _TD.a.push(function (TD) {
         },
 
         panel: {
-          x: TD.padding * 2 + TD.grid_size * 16,
+          x: TD.padding * 2 + TD.grid_size * 17, // 16,
           y: TD.padding,
           map: {
             grid_x: 3,
