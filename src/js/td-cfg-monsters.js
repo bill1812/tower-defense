@@ -64,7 +64,7 @@ _TD.a.push(function (TD) {
       shield: 0,
 
       // 消灭本怪物后可得多少金钱（可选）
-      money: 5
+      money: 10 // 5
     }, {
       // idx: 1
       name: "monster 2",
@@ -165,7 +165,7 @@ _TD.a.push(function (TD) {
 
     if (!attr2.render) {
       // 如果没有指定当前怪物的渲染方法
-      attr2.render = defaultMonsterRender
+      attr2.render = defaultMonsterRender;
     }
     return attr2;
   };
