@@ -40,6 +40,7 @@ _TD.a.push(function (TD) {
        *  "LMG": 轻机枪
        *  "HMG": 重机枪
        *  "laser_gun": 激光枪
+       *  "Splash"
        */
       this.type = cfg.type;
 
@@ -227,7 +228,7 @@ _TD.a.push(function (TD) {
         return;
       }
 
-      if (this.type == "laser_gun") {
+      if (this.type == "laser_gun" || this.type == "Splash" || this.type == "THOR") {
         // 如果是激光枪，目标立刻被击中
         this.target.beHit(this, this.damage);
         return;
@@ -312,7 +313,8 @@ _TD.a.push(function (TD) {
         this.upgrade();
 
         msg = TD._t("upgrade_success", [
-          TD._t("building_name_" + this.type), this.level,
+          TD._t("building_name_" + this.type),
+          this.level,
           this.getUpgradeCost()
         ]);
       }
@@ -405,7 +407,9 @@ _TD.a.push(function (TD) {
     },
 
     onClick: function () {
-      if (this.is_pre_building || this.scene.state != 1) return;
+      if (this.is_pre_building || this.scene.state != 1) {
+        return;
+      }
       this.toggleSelected();
     }
   };

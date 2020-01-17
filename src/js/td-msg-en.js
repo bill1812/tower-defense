@@ -26,6 +26,10 @@ _TD.a.push(function (TD) {
     "building_name_LMG": "LMG",
     "building_name_HMG": "HMG",
     "building_name_laser_gun": "Laser gun",
+
+    "building_name_Splash": "Splash",
+    "building_name_THOR": "THOR",
+
     "building_info": "${0}: Level ${1}, Damage ${2}, Speed ${3}, Range ${4}, Kill ${5}",
     "building_info_wall": "${0}",
     "building_intro_wall": "Roadblock: monsters could not pass ($${0})",
@@ -33,6 +37,10 @@ _TD.a.push(function (TD) {
     "building_intro_LMG": "Light Machine Gun: longer range, normal damage ($${0})",
     "building_intro_HMG": "Heavy Machine Gun: fast shoot, greater damage, normal range ($${0})",
     "building_intro_laser_gun": "Laser gun: greater damage, 100% hit ($${0})",
+
+    "building_intro_Splash": "Splash: greatest damage, 100% hit ($${0})",
+    "building_intro_THOR": "THOR: God's Weapon, 100% hit ($${0})",
+
     "click_to_build": "Left click to build ${0} ($${1})",
     "upgrade": "Upgrade ${0} to level ${1} , cost $${2}。",
     "sell": "Sell ${0} for $${1}",

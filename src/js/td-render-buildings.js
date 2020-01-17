@@ -95,7 +95,7 @@ _TD.a.push(function (TD) {
       ctx.closePath();
       ctx.fill();
       ctx.stroke();
-
+      // start muzzle:
       ctx.lineWidth = 2 * _TD.retina;
       ctx.beginPath();
       ctx.moveTo(b.cx, b.cy);
@@ -111,7 +111,7 @@ _TD.a.push(function (TD) {
       ctx.closePath();
       ctx.fill();
       ctx.stroke();
-
+      // end of muzzle
       ctx.fillStyle = "#ccf";
       ctx.beginPath();
       ctx.arc(b.cx + 1, b.cy - 1, 2 * _TD.retina, 0, Math.PI * 2, true);
@@ -221,6 +221,44 @@ _TD.a.push(function (TD) {
       ctx.closePath();
       ctx.fill();
       ctx.stroke();
+    },
+    
+    "Splash": function (b, ctx, map, gs, gs2) {
+      var target_position = b.getTargetPosition();
+
+      ctx.fillStyle = "#f63";
+      ctx.strokeStyle = "#000";
+      ctx.beginPath();
+      ctx.lineWidth = _TD.retina;
+      ctx.arc(b.cx, b.cy, 7 * _TD.retina, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.fillStyle = "#fcc";
+      ctx.beginPath();
+      ctx.arc(b.cx + 1, b.cy - 1, 2 * _TD.retina, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+    },
+
+    "THOR": function (b, ctx, map, gs, gs2) {
+      var target_position = b.getTargetPosition();
+
+      ctx.fillStyle = "#f33";
+      ctx.strokeStyle = "#f63";
+      ctx.beginPath();
+      ctx.lineWidth = _TD.retina;
+      ctx.arc(b.cx, b.cy, 7 * _TD.retina, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+      ctx.fillStyle = "#fcc";
+      ctx.beginPath();
+      ctx.arc(b.cx + 1, b.cy - 1, 2 * _TD.retina, 0, Math.PI * 2, true);
+      ctx.closePath();
+      ctx.fill();
     }
   };
 

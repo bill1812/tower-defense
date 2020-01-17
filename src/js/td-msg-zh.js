@@ -26,6 +26,9 @@ _TD.a.push(function (TD) {
     "building_name_LMG": "轻机枪",
     "building_name_HMG": "重机枪",
     "building_name_laser_gun": "激光炮",
+
+    "building_name_Splash": "Splash",
+
     "building_info": "${0}: 等级 ${1}，攻击 ${2}，速度 ${3}，射程 ${4}，战绩 ${5}",
     "building_info_wall": "${0}",
     "building_intro_wall": "路障 可以阻止怪物通过 ($${0})",

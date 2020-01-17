@@ -89,6 +89,26 @@ _TD.a.push(function (TD) {
         life: 100,
         shield: 100,
         cost: 2000
+      },
+
+      "Splash": {
+        damage: 500,
+        range: 8,
+        max_range: 16,
+        speed: 10,
+        life: 100,
+        shield: 100,
+        cost: 5000
+      },
+
+      "THOR": {
+        damage: 5000,
+        range: 8,
+        max_range: 16,
+        speed: 20,
+        life: 100,
+        shield: 100,
+        cost: 100000
       }
     };
     return building_attributes[building_type] || {};

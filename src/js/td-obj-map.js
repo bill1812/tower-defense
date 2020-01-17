@@ -95,9 +95,7 @@ _TD.a.push(function (TD) {
      * 因为第一波怪物只有在地图上有了第一件武器后才会出现
      */
     checkHasWeapon: function () {
-      this.has_weapon = (this.anyBuilding(function (obj) {
-        return obj.is_weapon;
-      }) != null);
+      this.has_weapon = (this.anyBuilding(function (obj) { return obj.is_weapon; }) != null);
     },
 
     /**
